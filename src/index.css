@@ -9,9 +9,12 @@
   --title-color: #0b0a0a;
   --text-color: #403a3a;
   --text-color-light: #707070;
-  --container-color: #fafafa;
-  --container-color-alt: #f0efef;
+  --container-color: #ededed;
+  --container-color-alt: #fefefe;
   --body-color: #fcfcfc;
+  --color1: rgba(255, 255, 255, 0.7);
+  --color2: rgba(255, 255, 255, 0.3); 
+  /* --filter-color:  */
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -49,10 +52,13 @@ html {
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
   --title-color: #f2f2f2;
-  --text-color: #bfbfbf;
+  --text-color: #fafafa;
+  --text-color-light: #dadada;
   --container-color: #212121;
   --container-color-alt: #181616;
   --body-color: #2b2b2b;
+  --color1: rgba(0, 0, 0, 0.9);
+  --color2: rgba(0, 0, 0, 0.8);
 }
 body.scale-cv {
   --h1-font-size: 0.938rem;
@@ -71,10 +77,11 @@ body.scale-cv {
   color: var(--text-color);
   font-size: 1.2rem;
   cursor: pointer;
+  color: var(--text-color);
 }
 
 .change-theme:hover {
-  color: var(--title-color);
+  /* color: var(--title-color); */
 }
 /*========== Font size variables to scale cv ==========*/
 
@@ -173,8 +180,18 @@ body {
   padding: 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
+  
   color: var(--text-color);
+  
+}
+@media(min-width: 968px){
+  body{
+    /* background: linear-gradient(to right top, #ebbf5b, #e9c46f) !important; */
+   
+  }
+}
+body{
+  background: var(--body-color);
 }
 h1,
 h2,
@@ -347,6 +364,7 @@ img {
 .home__icon {
   font-size: 1.2rem;
   margin-right: 0.25rem;
+  color: var(--text-color-light);
 }
 
 .home__button-movil {
@@ -381,6 +399,7 @@ img {
 .social__icon {
   font-size: 1.2rem;
   margin-right: 0.25rem;
+  color: var(--text-color-light);
 }
 /*========== PROFILE ==========*/
 .profile__description {
@@ -449,6 +468,7 @@ img {
   width: 5px;
   height: 5px;
   background-color: var(--text-color);
+  background-color: var(--text-color-light);
   border-radius: 50%;
   margin-right: 0.75rem;
 }
@@ -538,10 +558,14 @@ img {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     background-color: var(--container-color);
-    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
+    background: linear-gradient(to left bottom, var(--color1), var(--color2));
+    backdrop-filter: blur(5rem);
+    box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.1);
   }
   .resume__left {
     background-color: var(--container-color-alt);
+    background-color: transparent;
+   
   }
   .resume__left,
   .resume__right {
