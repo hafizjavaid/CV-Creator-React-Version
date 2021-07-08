@@ -186,7 +186,7 @@ body {
 }
 @media(min-width: 968px){
   body{
-    /* background: linear-gradient(to right top, #ebbf5b, #e9c46f) !important; */
+    background: linear-gradient(to right top, #ebbf5b, #e9c46f) !important;
    
   }
 }
@@ -560,7 +560,7 @@ img {
     background-color: var(--container-color);
     background: linear-gradient(to left bottom, var(--color1), var(--color2));
     backdrop-filter: blur(5rem);
-    box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 0 10px -2px rgba(0, 0, 0, 0.1); */
   }
   .resume__left {
     background-color: var(--container-color-alt);
