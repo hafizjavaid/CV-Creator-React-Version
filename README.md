@@ -1,6 +1,6 @@
 <p align="center"> 
-    <img src="./src/assets/light-demo.png" align="center" width="200" height="200"></img>
-    <img src="./src/assets/dark-demo.png" align="center"  width="200" height="200"></img>
+    <img src="./src/assets/light-demo.png" align="center" width="400" height="400"></img>
+    <img src="./src/assets/dark-demo.png" align="center"  width="400" height="400"></img>
 </p>
 
 <h1 align="center"> Software Developer Resume 🔥 Web Developer Resume 🔥 Software Developer Resume 🔥<h1> 
