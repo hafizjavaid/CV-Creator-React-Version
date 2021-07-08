@@ -131,41 +131,40 @@ body.scale-cv {
 
 .scale-cv .home__icon,
 .scale-cv .social__icon,
-.scale-cv .interests__icon{
+.scale-cv .interests__icon {
   font-size: 1rem;
 }
 
 .scale-cv .education__container,
 .scale-cv .experience__container,
-.scale-cv .certificate__container{
+.scale-cv .certificate__container {
   gap: 1rem;
 }
 
 .scale-cv .education__rounder,
-.scale-cv .experience__rounder{
+.scale-cv .experience__rounder {
   width: 11px;
   height: 11px;
-  margin-top: .22rem;
+  margin-top: 0.22rem;
 }
 
 .scale-cv .education__line,
-.scale-cv .experience__line{
+.scale-cv .experience__line {
   width: 1px;
   height: 110%;
   transform: translate(5px, 0);
-
 }
 
 .scale-cv .education__data,
-.scale-cv .experience__data{
-  gap: .25rem;
+.scale-cv .experience__data {
+  gap: 0.25rem;
 }
 
-.scale-cv .skills__name{
+.scale-cv .skills__name {
   margin-bottom: var(--mb-1);
 }
 
-.scale-cv .interests__container{
+.scale-cv .interests__container {
   column-gap: 2.5rem;
 }
 
@@ -258,6 +257,10 @@ img {
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
     transition: 0.3s;
+  }
+  .skills__name,
+  .languages__name {
+    justify-content: center;
   }
 }
 
@@ -498,6 +501,7 @@ img {
   z-index: var(--z-tooltip);
   transition: 0.4s;
   visibility: hidden;
+  cursor: pointer;
 }
 .scrolltop__icon {
   font-size: 1.2rem;
@@ -529,7 +533,7 @@ img {
   .scrolltop {
     display: none;
   }
-
+ 
   .resume {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
@@ -570,4 +574,5 @@ img {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
   }
+ 
 }

@@ -10,7 +10,7 @@ const Education = () => {
           <div className="education__content" key={i}>
             <div className="education__time">
               <span className="education__rounder" />
-              {education.line && <span class="education__line"></span>}
+              {education.line && <span className="education__line"></span>}
             </div>
             <div className="education__data bd-grid">
               <h3 className="education-title">{education.title}</h3>

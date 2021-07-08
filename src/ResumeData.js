@@ -1,5 +1,13 @@
 import homeImage from "./assets/me.webp";
 // ========================== Header Data
+const headerIds = [
+  "home",
+  "profile",
+  "education",
+  "skills",
+  "experience",
+  "certificates",
+];
 const HeaderLinks = [
   {
     linkText: "Home",
@@ -31,11 +39,11 @@ const HeaderLinks = [
     linkID: "certificates",
     boxIcon: "bx-award",
   },
-  {
-    linkText: "References",
-    linkID: "references",
-    boxIcon: "bx-link-external",
-  },
+  //   {
+  //     linkText: "References",
+  //     linkID: "references",
+  //     boxIcon: "bx-link-external",
+  //   },
 ];
 
 //  ===================================== Left Section Content =============================== //
@@ -127,9 +135,64 @@ const skillsData = {
 const logoText = "Hafiz.";
 const menuIcon = "bx-grid-alt";
 
-
 //  ===================================== Right Section Content =============================== //
 
+// ======================== Certificates Data
+const certificatesData = {
+  title: "Certificates",
+  certificates: [
+    {
+      title: "Member of Hackathon Winner Team AirTech’19",
+      describe:
+        "We Presented the idea of a Forest fire prevention system using WSN.",
+    },
+  ],
+};
+
+// ========================= Experience Data
+const experienceData = {
+  title: "Experience",
+  experiences: [
+    {
+      title: "RigRex / Front-end Developer",
+      company: "2019 - PRESENT",
+      describe:
+        "Working as a Front-end developer at RigRex. Primary responsibilities are to develop the Front-end of Websites.",
+      line: true,
+    },
+    {
+      title: "STIC ( Software Engineer )",
+      company: "Sep 2018 - 2019",
+      describe: "I worked as a software eningeer at stic.",
+      line: false,
+    },
+  ],
+};
+
+// ========================= Languages Data
+const languageData = {
+  title: "Languages",
+  languages: ["English", "Panjabi", "Urdu"],
+};
+
+// ========================= INTERESTS Data
+const interestsData = {
+  title: "INTERESTS",
+  interests: [
+    {
+      icon: "bxs-plane-alt",
+      text: "Travel",
+    },
+    {
+      icon: "bx-headphone",
+      text: "Gaming",
+    },
+    {
+      icon: "bx-book",
+      text: "Reading",
+    },
+  ],
+};
 export {
   HeaderLinks,
   logoText,
@@ -139,4 +202,9 @@ export {
   profileData,
   educationData,
   skillsData,
+  certificatesData,
+  experienceData,
+  languageData,
+  interestsData,
+  headerIds
 };

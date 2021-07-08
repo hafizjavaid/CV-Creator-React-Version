@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { homeData } from "../../ResumeData";
 const Home = () => {
+  const [isDark, setIsDark] = useState(false);
+  useEffect(() => {
+    document.body.classList.toggle("dark-theme", isDark);
+  }, [isDark]);
   return (
     <section className="home" id="home">
       <div className="home__container section bd-grid">
@@ -11,11 +15,11 @@ const Home = () => {
           </h1>
           <h3 className="home__profession"> {homeData.homeProfession}</h3>
 
-          <div>
+          {/* <div>
             <a href="./assets/pdf/ResumeCv.pdf" className="home__button-movil">
               Dowload
             </a>
-          </div>
+          </div> */}
         </div>
         {/* Home Information */}
         <div className="home__address bd-grid">
@@ -28,13 +32,22 @@ const Home = () => {
         </div>
       </div>
       {/* Theme change button */}
-      <i className="bx bx-moon change-theme" title="Theme" id="theme-button" />
-      {/* Button For PDF */}
       <i
-        className="bx bx-download generate-pdf"
-        title="Generate PDF"
-        id="resume-button"
+        onClick={() => setIsDark(!isDark)}
+        className={`bx change-theme ${isDark ? "bx-sun" : "bx-moon"}`}
+        title="Theme"
+        id="theme-button"
       />
+      {/* Button For PDF */}
+      {/* <a
+        className="generate-pdf"
+        href="../../assets/light.pdf"
+        target="_blank"
+        download
+        id="resume-button"
+      >
+        <i className="bx bx-download" title="Generate PDF" />
+      </a> */}
     </section>
   );
 };
